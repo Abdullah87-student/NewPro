@@ -1,0 +1,98 @@
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+public class Main {
+
+
+
+
+
+
+    public static void main(String[] args) throws IOException {
+
+
+        System.out.println("Enter G4 file name with extension");
+        Scanner input = new Scanner(System.in);
+        File file1 = new File(input.nextLine());
+        input = new Scanner(file1);
+
+        System.out.println("Enter Error comparison file name with extension");
+        Scanner input2 = new Scanner(System.in);
+        File fileerrordata = new File(input2.nextLine());
+        input2 = new Scanner(fileerrordata);
+
+
+        while (input.hasNextLine()) {
+            String Line = input.nextLine();
+            //System.out.println(Line);
+        }
+
+
+        String Line2 = null;
+        while (input2.hasNextLine()) {
+            Line2 = input2.nextLine();
+           // System.out.println(Line2);
+        }
+        input.close();
+
+
+        File Fileupload = new File(fileerrordata.getPath());
+
+        CharStream Firstret = CharStreams.fromFileName(String.valueOf(Fileupload));
+        //ExprLexer lexer = new ExprLexer(Firstret);
+       // CommonTokenStream token = new CommonTokenStream(lexer);
+       // ExprParser parser = new ExprParser(token);
+        // ExprParser.ExprContext parseTree = parser.expr();
+        //System.out.println(Firstret);
+
+        String Text = String.valueOf(Firstret);
+        System.out.println(Text);
+
+
+        Pattern pattern1 = Pattern.compile("thread.sleep()", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern1.matcher(Text);
+        boolean matchFound = matcher.find();
+
+
+
+
+
+
+
+        int count=1;
+       if(matchFound) {
+            System.out.println("Match found");
+
+
+           while (matcher.find()) {
+
+               count++;
+               System.out.println(matchFound);
+
+           }
+
+
+        }
+       else {
+            System.out.println("Match not found");
+            count=0;
+
+        }
+        System.out.println("There are "+count+"  instances of the error present");
+
+
+
+
+
+
+}
+}

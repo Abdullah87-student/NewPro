@@ -8,3 +8,6 @@ thread.sleep()
 thread.sleep()
 thread.sleep()
 thread.sleep()
+GET
+GET
+GET
