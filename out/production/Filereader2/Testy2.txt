@@ -1,0 +1,25 @@
+Hello thank you for reading this  testing text
+This testing text is for the capstone project SE495-I
+Lets have fun with coding
+What are you doing with your life?
+India
+Mike
+India
+Sally has a dog who barks alot
+Sierra
+Juliet
+A quick brown fox jumped over the lazy dog
+Alpha
+Mike
+Oranges are my favourite fruit
+Uniform
+Romeo
+Thread.sleep()
+Hello world
+Ipsum lorum Ipsum something something something
+LATIN LATIN LATIN
+There are two hidden phrases in this message highly relevant to our project above and below
+Beam me up scotty!
+thread.sleep()
+To be or not to be that is the question
+Black swans are very rare

@@ -1,0 +1,13 @@
+sleeper
+alpha
+delta
+beta
+thread.sleep()
+11010011110010011
+thread.sleep()
+thread.sleep()
+thread.sleep()
+thread.sleep()
+GET
+GET
+GET
